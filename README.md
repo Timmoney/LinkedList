@@ -1,1 +1,1 @@
-This is a simple linked list structure with basic operation.
+This is a simple linked list with basic operation.
