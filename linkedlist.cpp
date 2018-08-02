@@ -75,6 +75,8 @@ void reverse1(){
 		prev = current;;
 		current = next;
 	}
+
+	//the headptr is the first node, prev indicate the first node
 	headptr = prev;
 }
 //recursion stype, traversal to the end, passing argument
