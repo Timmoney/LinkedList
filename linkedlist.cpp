@@ -81,13 +81,17 @@ void reverse1(){
 }
 //recursion stype, traversal to the end, passing argument
 void reverse2(Node* p){
+	//the base case when p hit to the end of the linkedlist (exit condition)
 	if(p->next == NULL){
 		headptr = p;
 		return;
 	}
+	//keep calling until hit the base case
 	reverse2(p->next);	
 
+	//initialize a new node pointer points at p's next
 	Node* q = p-> next;
+	//reverse the arrow
 	q->next = p;
 	p->next = NULL;
 }
